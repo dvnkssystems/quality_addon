@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-06 05:56:02.759710",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "inspection_activity",
+  "characteristic_to_verify",
+  "reference_document",
+  "acceptance_criteria",
+  "is_heading",
+  "sr_no",
+  "column_break_mgno",
+  "document_to_generate",
+  "quantum_of_inspection",
+  "thtpl",
+  "ai",
+  "client_or_tpi"
+ ],
+ "fields": [
+  {
+   "fieldname": "inspection_activity",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Inspection Activity",
+   "options": "Inspection Activity"
+  },
+  {
+   "fieldname": "characteristic_to_verify",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Characteristic to Verify"
+  },
+  {
+   "fieldname": "reference_document",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Reference Document",
+   "options": "Quality Procedure"
+  },
+  {
+   "fieldname": "acceptance_criteria",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Acceptance Criteria"
+  },
+  {
+   "fieldname": "column_break_mgno",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "document_to_generate",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Document to Generate",
+   "options": "Inspection Template\nReport\nCertificate"
+  },
+  {
+   "fieldname": "quantum_of_inspection",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Quantum of Inspection"
+  },
+  {
+   "fieldname": "thtpl",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "THTPL",
+   "options": "H\nQ\nR\nA"
+  },
+  {
+   "fieldname": "ai",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "AI",
+   "options": "H\nQ\nR\nA"
+  },
+  {
+   "fieldname": "client_or_tpi",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Client Or TPI",
+   "options": "H\nQ\nR\nA"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_heading",
+   "fieldtype": "Check",
+   "label": "Is Heading"
+  },
+  {
+   "fieldname": "sr_no",
+   "fieldtype": "Float",
+   "label": "Sr No",
+   "precision": "1"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-06 11:12:25.464791",
+ "modified_by": "Administrator",
+ "module": "Quality Addon",
+ "name": "Quality Control Plan Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

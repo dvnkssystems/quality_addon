@@ -1,0 +1,213 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:form_no",
+ "creation": "2025-11-05 12:45:55.529428",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_o5en",
+  "title",
+  "form_no",
+  "amended_from",
+  "column_break_unyv",
+  "qcp_date",
+  "revision_no",
+  "section_break_nsyi",
+  "project",
+  "customer",
+  "order_acceptance_no",
+  "po_no",
+  "po_date",
+  "column_break_lcdv",
+  "item",
+  "capacity",
+  "qty",
+  "msn",
+  "drawing_no",
+  "column_break_tjip",
+  "doc_no",
+  "code",
+  "tab_2_tab",
+  "inspection_activity_section",
+  "items"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_o5en",
+   "fieldtype": "Section Break",
+   "label": "Header"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Quality Control Plan",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "revision_no",
+   "fieldtype": "Data",
+   "label": "Revision No"
+  },
+  {
+   "default": "Today",
+   "fieldname": "qcp_date",
+   "fieldtype": "Date",
+   "label": "QCP Date"
+  },
+  {
+   "fieldname": "column_break_unyv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Inspection Details"
+  },
+  {
+   "fieldname": "inspection_activity_section",
+   "fieldtype": "Section Break",
+   "label": "Inspection Activity"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "form_no",
+   "fieldtype": "Data",
+   "label": "Form No",
+   "unique": 1
+  },
+  {
+   "fieldname": "section_break_nsyi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "order_acceptance_no",
+   "fieldtype": "Link",
+   "label": "Order Acceptance No",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "po_no",
+   "fieldtype": "Data",
+   "label": "PO No"
+  },
+  {
+   "fieldname": "po_date",
+   "fieldtype": "Date",
+   "label": "PO Date"
+  },
+  {
+   "fieldname": "column_break_lcdv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "capacity",
+   "fieldtype": "Data",
+   "label": "Capacity"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "msn",
+   "fieldtype": "Data",
+   "label": "MSN"
+  },
+  {
+   "fieldname": "drawing_no",
+   "fieldtype": "Data",
+   "label": "JOB / DRWG NO"
+  },
+  {
+   "fieldname": "column_break_tjip",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "doc_no",
+   "fieldtype": "Data",
+   "label": "DOC NO"
+  },
+  {
+   "fieldname": "code",
+   "fieldtype": "Select",
+   "label": "Code",
+   "options": "ASME\nBPVC\nSEC \u2013 VIII\nDIV. 1 \u2013 ED 2021"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Quality Control Plan Details"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-11-06 05:57:16.112048",
+ "modified_by": "Administrator",
+ "module": "Quality Addon",
+ "name": "Quality Control Plan",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Quality Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
