@@ -241,10 +241,10 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-ffixtures = [
+fixtures = [
     {"dt": "Print Format", "filters": [
         [
-            "name", "=", [
+            "name", "in", [
                 "Quality Control Plan"
             ]
         ]
